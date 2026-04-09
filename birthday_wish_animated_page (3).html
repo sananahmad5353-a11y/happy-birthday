@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Maryam 🎉</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  color: black;
+  padding: 20px;
+  max-width: 400px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  background: white;
+  color: #ff6f91;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.hidden {
+  display: none;
+  margin-top: 20px;
+}
+
+.flower {
+  font-size: 50px;
+  animation: pop 0.8s ease;
+}
+
+@keyframes pop {
+  from { transform: scale(0); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>🎉 Happy Birthday Maryam 🎂</h1>
+  
+  <p>
+    Hey Maryam 😊 <br><br>
+    Just wanted to say you’re a really good friend, and I’m glad you’re in my life. 
+    You make things more fun and easy, and I honestly enjoy every conversation with you. <br><br>
+    Stay the same amazing person you are — you’re truly special as a friend 💙
+  </p>
+
+  <button onclick="showSurprise()">Tap for Surprise 🎁</button>
+
+  <div id="surprise" class="hidden">
+    <div class="flower">💐</div>
+    <p>Take it 🌸</p>
+  </div>
+</div>
+
+<script>
+function showSurprise() {
+  document.getElementById("surprise").style.display = "block";
+}
+</script>
+
+</body>
+</html>
